@@ -21,8 +21,6 @@ void	ft_is_negative(int n)
 
 	result = POSITIVE_NUMBER;
 	if (n < 0)
-	{
 		result = NEGATIVE_NUMBER;
-	}
 	write(1, &result, 1);
 }
