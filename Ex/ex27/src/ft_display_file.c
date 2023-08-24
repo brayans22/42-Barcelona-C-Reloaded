@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-int get_stream(char *path_file)
+int get_file_descriptor(char *path_file)
 {
     int fd;
 
@@ -31,7 +31,7 @@ void process_file(char *path_file)
 {
     int fd;
 
-    fd = get_stream(path_file);
+    fd = get_file_descriptor(path_file);
     if (fd != -1)
     {
         display_file(fd);
