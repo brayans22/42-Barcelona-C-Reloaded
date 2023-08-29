@@ -1,22 +1,25 @@
 #include <stdlib.h>
 
-int ft_strlen(char *str, int count)
+int	ft_strlen(char *str)
 {
-    if (str[count] == '\0')
-        return (count);
-    return ft_strlen(str, count + 1);
+	int	len;
+
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }
 
 char *ft_strdup(char *src)
 {
-    int     i;
-    char    *aux;
+    unsigned int     i;
+    char            *aux;
     
     i = 0;
     aux = (char *)malloc(ft_strlen(src, 0) + 1);
     if (!aux)
         return (0);
-    while (src[i] != '\0')
+    while (src[i])
     {
         aux[i] = src[i];
         i++;

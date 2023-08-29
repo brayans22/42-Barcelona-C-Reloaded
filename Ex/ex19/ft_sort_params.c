@@ -20,7 +20,7 @@ int    ft_strcmp(char *s1, char *s2)
     return (s1[i] - s2[i]);
 }
 
-void    ft_print_params(int argc, char **argv)
+void    ft_print_params(unsigned int argc, char **argv)
 {
     unsigned int	i;
 	unsigned int	j;
@@ -44,13 +44,7 @@ int main(int argc, char **argv)
 {
     int i;
     int j;
-
-    /*
-    char *argv[] = {"a.out", "Daniel", "Ernesto", "Zara", "aAlicia", 
-                    "Ana", "Fabian", "Marina", "Gaby", "Brayan", "AAAA", 
-                    "BBBBB", "TU PTM"};
-    int argc = 13;
-    */
+    
     if (argc > 1)
     {
         i = 1;
