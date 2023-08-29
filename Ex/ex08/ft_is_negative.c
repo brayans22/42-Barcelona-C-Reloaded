@@ -13,13 +13,13 @@
 #include <unistd.h>
 
 #define NEGATIVE_NUMBER 'N'
-#define POSITIVE_NUMBER 'P'
+#define NULL_OR_POSITIVE_NUMBER 'P'
 
 void	ft_is_negative(int n)
 {
 	char	result;
 
-	result = POSITIVE_NUMBER;
+	result = NULL_OR_POSITIVE_NUMBER;
 	if (n < 0)
 		result = NEGATIVE_NUMBER;
 	write(1, &result, 1);
