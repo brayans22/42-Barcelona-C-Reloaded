@@ -12,24 +12,24 @@ void    ft_swap(char **argv, int i, int j)
 
 int    ft_strcmp(char *s1, char *s2)
 {
-    int    i;
+    unsigned int    i;
 
     i = 0;
-    while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+    while (s1[i] && s2[i] && s1[i] == s2[i])
         i++;
     return (s1[i] - s2[i]);
 }
 
 void    ft_print_params(int argc, char **argv)
 {
-    int	i;
-	int	j;
+    unsigned int	i;
+	unsigned int	j;
 
 	i = 1;
 	j = 0;
 	while (i < argc)
 	{
-		while (argv[i][j] != '\0')
+		while (argv[i][j])
 		{
 			write(1, &argv[i][j], 1);
 			j++;
