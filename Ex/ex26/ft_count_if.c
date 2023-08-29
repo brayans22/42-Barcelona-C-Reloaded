@@ -1,7 +1,7 @@
 int ft_count_if(char **tab, int(*f)(char*))
 {
-    int i;
-    int count;
+    unsigned int i;
+    unsigned int count;
     
     i = 0;
     count = 0;
