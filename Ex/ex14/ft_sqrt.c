@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	wrapped(int nb, int odd_n, int count_sust)
+int	wrapper_sqrt(int nb, int odd_nb, int sqrt_nb)
 {
-	if (nb > odd_n)
-		return (wrapped(nb - odd_n, odd_n + 2, count_sust + 1));
-	else if (nb == odd_n)
-		return (count_sust + 1);
+	if (nb > odd_nb)
+		return (wrapper_sqrt(nb - odd_nb, odd_nb + 2, sqrt_nb + 1));
+	else if (nb == odd_nb)
+		return (sqrt_nb + 1);
 	return (0);
 }
 
 int	ft_sqrt(int nb)
 {
-	return (wrapped(nb, 1, 0));
+	return (wrapper_sqrt(nb, 1, 0));
 }
 /*
 #include<stdio.h>

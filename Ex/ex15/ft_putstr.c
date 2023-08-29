@@ -14,13 +14,13 @@
 
 void	ft_putstr(char *str)
 {
-	int	i;
+	const char *s;
 
-	i = 0;
-	while (str[i] != '\0')
+	s = str;
+	while (*s)
 	{
-		write(1, &str[i], 1);
-		i++;
+		write(1, s, 1);
+		s++;
 	}
 }
 /*
