@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/06 20:31:48 by bsaiago-          #+#    #+#             */
-/*   Updated: 2023/07/06 20:31:55 by bsaiago-         ###   ########.fr       */
+/*   Created: 2023/09/04 11:45:40 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/05 17:54:00 by bsaiago-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
@@ -19,9 +19,9 @@ void	ft_print_alphabet(void)
 
 	actual_letter = 'a';
 	last_letter = 'z';
-	while (actual_letter <= last_letter) 
+	while (actual_letter <= last_letter)
 	{
-		write(1, &actual_letter, 1);
+		ft_putchar(actual_letter);
 		actual_letter++;
 	}
 }

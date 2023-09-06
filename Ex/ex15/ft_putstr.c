@@ -5,25 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/25 20:52:17 by bsaiago-          #+#    #+#             */
-/*   Updated: 2023/07/25 22:09:13 by bsaiago-         ###   ########.fr       */
+/*   Created: 2023/09/04 12:15:10 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/04 16:58:47 by bsaiago-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	const char *s;
+	const char	*s;
 
 	s = str;
 	while (*s)
 	{
-		write(1, s, 1);
+		ft_putchar(*s);
 		s++;
 	}
 }
 /*
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 int	main()
 {
 	char v [] = "hola como estas";

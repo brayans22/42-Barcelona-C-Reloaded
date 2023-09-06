@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/06 20:33:48 by bsaiago-          #+#    #+#             */
-/*   Updated: 2023/07/06 20:34:01 by bsaiago-         ###   ########.fr       */
+/*   Created: 2023/09/04 11:47:08 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/05 17:53:10 by bsaiago-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
@@ -19,9 +19,9 @@ void	ft_print_numbers(void)
 
 	actual_digit = '0';
 	last_digit = '9';
-	while (actual_digit <= last_digit) 
+	while (actual_digit <= last_digit)
 	{
-		write(1, &actual_digit, 1);
+		ft_putchar(actual_digit);
 		actual_digit++;
 	}
 }

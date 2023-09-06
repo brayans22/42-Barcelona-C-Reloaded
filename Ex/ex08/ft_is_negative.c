@@ -5,22 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/06 20:34:49 by bsaiago-          #+#    #+#             */
-/*   Updated: 2023/07/06 20:34:58 by bsaiago-         ###   ########.fr       */
+/*   Created: 2023/09/04 11:47:53 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/04 16:42:24 by bsaiago-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-#define NEGATIVE_NUMBER 'N'
-#define NULL_OR_POSITIVE_NUMBER 'P'
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
 	char	result;
 
-	result = NULL_OR_POSITIVE_NUMBER;
+	result = 'P';
 	if (n < 0)
-		result = NEGATIVE_NUMBER;
-	write(1, &result, 1);
+		result = 'N';
+	ft_putchar(result);
 }

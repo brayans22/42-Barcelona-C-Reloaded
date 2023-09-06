@@ -1,18 +1,32 @@
-#include <stdlib.h>
-int *ft_range(int min, int max)
-{
-    int i;
-    int *range;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/04 15:02:51 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/04 15:07:20 by bsaiago-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    if (!(range = (int *) malloc(sizeof(int) * (max - min))) || (min >= max))
-        return (NULL);
-    i = 0;
-    while (min < max)
-    {
-        range[i++] = min;
-        min++;
-    }
-    return (range);
+#include <stdlib.h>
+
+int	*ft_range(int min, int max)
+{
+	int	i;
+	int	*range;
+
+	range = (int *) malloc(sizeof(int) * (max - min));
+	if (!(range) || (min >= max))
+		return (NULL);
+	i = 0;
+	while (min < max)
+	{
+		range[i++] = min;
+		min++;
+	}
+	return (range);
 }
 /*
 I) CASO NO HAY MEMORIA MALLOC

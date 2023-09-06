@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bsaiago- <bsaiago-@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/04 12:59:02 by bsaiago-          #+#    #+#             */
+/*   Updated: 2023/09/04 16:34:05 by bsaiago-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 int	ft_strlen(char *str)
@@ -10,22 +22,22 @@ int	ft_strlen(char *str)
 	return (len);
 }
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-    unsigned int     i;
-    char            *aux;
-    
-    i = 0;
-    aux = (char *)malloc(ft_strlen(src, 0) + 1);
-    if (!aux)
-        return (0);
-    while (src[i])
-    {
-        aux[i] = src[i];
-        i++;
-    }
-    aux[i] = '\0';
-    return (aux);
+	unsigned int	i;
+	char			*aux;
+
+	i = 0;
+	aux = (char *)malloc(sizeof(ft_strlen(src) + 1));
+	if (!aux)
+		return (0);
+	while (src[i])
+	{
+		aux[i] = src[i];
+		i++;
+	}
+	aux[i] = '\0';
+	return (aux);
 }
 
 /*
