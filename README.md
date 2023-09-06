@@ -6,7 +6,7 @@ My C-Reloaded project of 42 at Barcelona
 |:-----:|
 | 100 % / 100 %|
 
-|Circle | Project | Language | Description | 
+|Circle | Ex | Language | Description | 
 |:-----:|:-------:|:--------:|:-----------:|
 |C Reloaded Subject| [C Reloaded Sub](https://github.com/brayans22/42-Barcelona-C-Reloaded/tree/main/Subject) | C | C Summary |
 |C Reloaded Ex 00| [C Reloaded Ex 00](https://github.com/brayans22/42-Barcelona-C-Reloaded/tree/main/Ex/ex00) | C | C Summary |
